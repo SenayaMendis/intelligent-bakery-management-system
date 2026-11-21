@@ -219,7 +219,7 @@ def health_check():
 Run the service:
 
 ```bash
-uvicorn main:app --reload --port 8000
+python -m uvicorn main:app --reload --port 8000
 ```
 
 Open `http://localhost:8000/docs` to view the FastAPI documentation.
@@ -284,7 +284,7 @@ Run each service in a separate terminal:
 |---|---|---|---|
 | React frontend | `frontend/` | `npm run dev` | Vite URL shown in terminal |
 | Express backend | `backend/` | `npm run dev` | `http://localhost:5000` |
-| FastAPI ML service | `ml-service/` | `uvicorn main:app --reload --port 8000` | `http://localhost:8000` |
+| FastAPI ML service | `ml-service/` | `python -m uvicorn main:app --reload --port 8000` | `http://localhost:8000` |
 
 PostgreSQL must also be running.
 
